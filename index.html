@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <title>
+            Family Book
+        </title>
+    </head>
+    <body>
+        <center>
+        <h1> Family Book </h1>
+        <img id= "family" src = "family images.jpg">
+        <h4 id = "familyhead"> Family Image </h4>
+        <buttton onclick = "NextImage()"> Next </buttton>
+        </center>
+    </body>
+    <script>
+        var Image = ["boy.jpg", "fathers.jpeg", "mothers.jpg", "girl.jpg"];
+        var Names = ["Brother", "Father", "Mother", "Sister"];
+        var i = 0;
+        function NextImage() {
+            document.getElementById("familyhead").src = Names[i];
+            document.getElementById("family").src = Image[i];
+            i++;
+        }
+    </script>
+</html>
